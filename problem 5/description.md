@@ -32,7 +32,7 @@ Koncert_muzicar_bend(id_koncert*, id_muzicar*, id_bend*)
 | Muzicar    | (id)   |
 | Muzicar_instrument    | (id_muzicar*, instrument)  |
 | Bend    | (id)   |
-| Bend_zanr    | (id_bend*, zanr)   |
+| Bend_zanr    | (id_bend*, zanr)|
 | Nastan    | (id)  |
 | Koncert    | (id*)   |
 | Festival    | (id*)   |
@@ -41,6 +41,7 @@ Koncert_muzicar_bend(id_koncert*, id_muzicar*, id_bend*)
 | Festival_bend   | (id_festival*, datum_od*, id_bend*)  |
 | Koncert_muzicar_bend    | (id_koncert*, id_muzicar*, id_bend*)   |
 
+_Забелешка:_ Foreign key се означени со *
 
 ![ER Diagram](./diagram.png)
 

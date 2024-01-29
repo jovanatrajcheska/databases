@@ -19,6 +19,17 @@ Objekt(<u>id_mesto*</u>, adresa, geo_shirina, geo_dolzina, id_grad*)
 
 Sosedi(<u>grad1*</u>, <u>grad2*</u>, rastojanie)
 
+| Табела | Primary key |
+| -------- | -------- |
+| Korisnik    | (kor_ime)   |
+| Korisnik_email    | (kor_ime*, email)  |
+| Mesto    | (id)   |
+| Poseta    | (id) |
+| Grad    | (id_mesto*)  |
+| Objekt    | (id_mesto*)   |
+| Sosedi    | (grad1*, grad2*)   |
+
+_Забелешка:_ Foreign key се означени со * 
 
 ![ER Diagram](./diagram.png)
 

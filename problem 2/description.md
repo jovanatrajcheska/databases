@@ -16,7 +16,16 @@ Vakcinacija(<u>id_lice*</u>, <u>id_med_lice*</u>, <u>shifra_vakcina*</u>)
 
 Vakcinacija_datum(<u>id_lice*</u>, <u>id_med_lice*</u>, <u>shifra_vakcina*</u>, <u>datum</u>)
 
+| Табела | Primary key |
+| -------- | -------- |
+| Lice    | (id)   |
+| Med_lice    | (id*)  |
+| Test    | (id*, shifra)   |
+| Vakcina    | (shifra) |
+| Vakcinacija    | (id_lice*, id_med_lice*, shifra_vakcina*)  |
+| Vakcinacija_datum    | (id_lice*, id_med_lice*, shifra_vakcina*, datum)   |
 
+_Забелешка:_ Foreign key се означени со *
 
 ![ER Diagram](./diagram.png)
 

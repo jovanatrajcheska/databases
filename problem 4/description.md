@@ -14,8 +14,7 @@ Video_zapis(naslov, jazik, vremetraenje, datum_d, datum_p)
 
 Video_zapis_zanr(naslov*, zanr)
 
-Lista_zelbi(naslov*, k_ime*, ime*)
-
+Lista_zelbi(ID, naslov*, k_ime*, ime*)
 
 Preporaka(ID, k_ime_od*, k_ime_na*, naslov*, datum, komentar, ocena)
 
@@ -29,6 +28,7 @@ Preporaka(ID, k_ime_od*, k_ime_na*, naslov*, datum, komentar, ocena)
 | Lista_zelbi    | (ID)   |
 | Preporaka    | (ID)   |
 
+_Забелешка:_ Foreign key се означени со *
 
 ![ER Diagram](./diagram.png)
 
