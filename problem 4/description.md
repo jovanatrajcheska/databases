@@ -19,7 +19,15 @@ Lista_zelbi(naslov*, k_ime*, ime*)
 
 Preporaka(ID, k_ime_od*, k_ime_na*, naslov*, datum, komentar, ocena)
 
-
+| Табела | Primary key |
+| -------- | -------- |
+| Korisnik    | (k_ime)   |
+| Premium_korisnik    | (k_ime*)  |
+| Profil    | (k_ime*, ime)   |
+| Video_zapis    | (naslov)|
+| Video_zapis_zanr    | (naslov*, zanr)  |
+| Lista_zelbi    | (ID)   |
+| Preporaka    | (ID)   |
 
 
 ![ER Diagram](./diagram.png)

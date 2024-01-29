@@ -27,6 +27,20 @@ Festival_bend(id_festival*, datum_od*, id_bend*)
 
 Koncert_muzicar_bend(id_koncert*, id_muzicar*, id_bend*)
 
+| Табела | Primary key |
+| -------- | -------- |
+| Muzicar    | (id)   |
+| Muzicar_instrument    | (id_muzicar*, instrument)  |
+| Bend    | (id)   |
+| Bend_zanr    | (id_bend*, zanr)   |
+| Nastan    | (id)  |
+| Koncert    | (id*)   |
+| Festival    | (id*)   |
+| Festival_odrzuvanje    | (id*, datum_od)    |
+| Muzicar_bend   | (id_muzicar*, id_bend*)  |
+| Festival_bend   | (id_festival*, datum_od*, id_bend*)  |
+| Koncert_muzicar_bend    | (id_koncert*, id_muzicar*, id_bend*)   |
+
 
 ![ER Diagram](./diagram.png)
 
@@ -50,5 +64,4 @@ Koncert_muzicar_bend(id_koncert*, id_muzicar*, id_bend*)
 4. Да се напише DML израз со кој за секој фестивал ќе се врати името, цената на билетите, капацитетот на посетители, бројот на одржувања и вкупниот број на различни бендови кои настапиле. 
 
 5. За секој музичар се чува изведен атрибут **br_bendovi** кој го означува бројот на бендови во кои свири тој музичар.
-
 Да се напише/ат соодветниот/те *тригер/и* за одржување на конзистентноста на атрибутот **br_bendovi** при зачленување во бенд.
